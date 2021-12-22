@@ -1,0 +1,9 @@
+# Pour ignorer un dossier :
+
+/src
+/__pycache__
+
+
+# pour ignorer un fichier :
+
+fichieraignorer.txt
