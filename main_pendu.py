@@ -3,8 +3,7 @@
 
 '''
 ZONE DE TEST FONCTION ENTRE LES LIGNES 15 ET 40 :
-________________________________________________
-
+-------------------------------------------------
 MAIS PENSER A LES INTEGRER PAR LA SUITE A VOS MODULE RESPECTIFS
 ET LES IMPORTER VIA LA NOTATION POINTEE COMME DANS L'EXEMPLE :
 https://docs.google.com/drawings/d/11fcRO11Jpc06jaaqctlZfIPX_ASjFkrGnvvL_YCMnEU/edit
