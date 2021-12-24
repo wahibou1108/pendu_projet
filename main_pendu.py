@@ -116,14 +116,14 @@ fen.geometry(geo)
 # CANEVAS FENETRE IMAGE D'ARRIERE PLAN
 #-------------------------------------
 canvArrPlan = Canvas(fen, width=800, height=670)                # LA TAILLE DE MON CANEVAS
-imgArrierePlan = PhotoImage(file="src\pendu0.png")              # .zoom(2)
+imgArrierePlan = PhotoImage(file="src/pendu0.png")              # .zoom(2)
 canvArrPlan.create_image(0,0, anchor=NW, image=imgArrierePlan)  # anchor défini de point de départ NWest NEst SW SE de l'img
 canvArrPlan.place(x=0, y=0)                                     # LA POSITION X Y DE MON CANEVAS
 
 # CI-DESSOUS ETAPE 9 , PERSONNAGE COMPLETEMENT PENDU
 '''
 pendu9 = Canvas(fen, width=800, height=670)
-imgPendu9 = PhotoImage(file="src\pendu9.png")
+imgPendu9 = PhotoImage(file="src/pendu9.png")
 pendu9.create_image(0,0, anchor=NW, image=imgPendu9)
 pendu9.place(x=-1, y=0)
 
