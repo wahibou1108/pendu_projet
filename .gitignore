@@ -6,31 +6,11 @@ fichieraignorer.txt
 tk_essais.py
 
 
-
-
-# Dossiers / fichiers ignorés JARFAR :
-
-
-
-
-
-
-# Dossiers / fichiers ignorés ABDERRAHIM :
-
-
-
-
-
-
-# Dossiers / fichiers ignorés SAMIA :
-
-
-
-
-
-
-# Dossiers / fichiers ignorés SIKOU :
-
+module_abder.pyc
+module_jarfar.pyc
+module_samia.pyc
+module_sikou.pyc
+module_wahib.pyc
 
 
 
