@@ -54,13 +54,6 @@ def Quitter():
     pygame.quit()
     MyWindow.destroy()
 
-#afficher la lettre cliqué par le clavier
-def cliquer(event):
-    label1.config(text=event.char)
-
-
-
-
 frame1=Frame(MyWindow)
 frame1.pack(side=TOP,fill=X)
 
@@ -132,7 +125,7 @@ for button in buttons:
 filename = PhotoImage(file = 'pendu9.png') #PhotoImage n'accepte que format .png
 background_label = ttk.Label(MyWindow, image=filename)
 status= background_label
-status.pack(side=TOP, fill=X, padx=2)
+status.pack(side=TOP, padx=2)
 
 
 # affichage de la fenêtre principale
