@@ -13,7 +13,7 @@ from tkinter import *
 import ttkthemes as td #you should first install ttkthemes using bash command "pip install ttkthemes"
 from tkinter import ttk
 import pygame
-
+from tkinter import messagebox
 
 
 
@@ -23,7 +23,7 @@ MyWindow.set_theme('black') #i prefer the "radiance", "black" and "aquativo" the
 MyWindow.title("Jeud du pendu")
 MyWindow.geometry("800x600")
 MyWindow.config(bg='whitesmoke')
-#MyWindow.resizable(0, 0)
+MyWindow.resizable(0, 0)
 
 def select(value):
 
@@ -50,12 +50,15 @@ def stop():
 
 #Quitter la fenetre MyWindow
 def Quitter():
+   if messagebox.askokcancel("Quit", "Do you really wish to exit?"):
     pygame.quit()
     MyWindow.destroy()
 
 #afficher la lettre cliqué par le clavier
 def cliquer(event):
     label1.config(text=event.char)
+
+
 
 
 frame1=Frame(MyWindow)
@@ -74,11 +77,6 @@ submenu.add_command(label= "1: jouer la musique", command = play, activebackgrou
 submenu.add_command(label = "2: Arrêter la musique", command = stop, activebackground ='pink', activeforeground ='green')
 submenu.add_separator()
 submenu.add_command(label = "3: Quitter", command = Quitter, activebackground ='pink', activeforeground ='green')
-
-#Création d'une image en arriere plan
-filename = PhotoImage(file = 'pendu9.png') #PhotoImage n'accepte que format .png
-background_label = ttk.Label(frame2, image=filename)
-background_label.place(x = 0, y = 10, relwidth=1, relheight=1)
 
 
 # **** ToolBar *******
