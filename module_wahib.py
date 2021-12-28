@@ -1,6 +1,7 @@
 # fichier module_wahib.py
 
 import webbrowser
+#from math import *
 
 
 def wikiHelp():
@@ -26,8 +27,36 @@ if __name__ == "__main__":
 
     '''
 
+    mot = "MARRON"
+
+    mot_masque = [ "_" for i in range(len(mot))]
+
+    mot_masque = " ".join(mot_masque)
+
+    print(mot_masque)
 
 
+    '''
+    for i in range(len(mot)):
+        print(" _ ")
+
+    lettre = input("Entrez une lettre :")
+
+    if i == mot[0]:
+        print("Bravo !")
+    else:
+        print("Faux")
+
+    '''
+
+    m = len(mot)
+    for i in mot:
+        m = mot.replace(i,"-")
+    print(mot)
+    print(m)
+
+
+    print("----------------")
 
 
 
