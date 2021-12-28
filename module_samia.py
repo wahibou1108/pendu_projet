@@ -10,6 +10,9 @@ from unidecode import unidecode
 #j'utilise unidecode et sa fonction du meme nom qui retourne une chaine 
 # de caractere sans accent. Pour l'utiliser il faut l'installer au prealable
 
+#la fonction guessWord demande a l'utilisateur de choisir une categ et en fonction du choix entré, 
+#la fonction parcourt le fichier approprié et retourne un mot au hasard de la liste grace a la fonction random et sa methode choice
+
 def guessWord():
     categorie =input("choisissez une categorie : animaux, sports, villes, fruits et legumes : ")
     if categorie == "animaux" :
@@ -66,14 +69,14 @@ def init_jeu():
 init_jeu()
 if partie_en_cours:
     print('Le mot à deviner est : ' , show)
-    lettres_incompatibles=[]
+    lettres_saisies=[]
     while '_' in show and nb_erreurs<9:
         lettre=saisieLettre()
-        if lettre not in lettres_incompatibles:
-            lettres_incompatibles+=[lettre]
+        if lettre not in lettres_saisies:
+            lettres_saisies+=[lettre]
         if lettre not in mot_a_deviner:
             nb_erreurs+=1
-        show=hideWord(mot_a_deviner, lettres_incompatibles)
+        show=hideWord(mot_a_deviner, lettres_saisies)
         print('\n Le mot a deviner : ', show , ' '*2, 'nb d\'erreurs restant:',9 - nb_erreurs)
 
 
