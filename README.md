@@ -1,7 +1,17 @@
 # pendu_projet
+#****************************************************************
+Le dossier /src est à coller à la racine de votre projet 
+
+Ce dossier /src sera accessible via le lien gDrive que j'afficherai ci-dessous :
+---  lien à venir ---
+
 
 #****************************************************************
+Pour la partie sound installer pygame :
+pip install pygame
 
+
+#****************************************************************
 Pendu réalisé en PYTHON avec la collaboration de :
 	- Samia 
 	- Abderrahim 
@@ -10,8 +20,6 @@ Pendu réalisé en PYTHON avec la collaboration de :
 	- Wahib
 
 #****************************************************************
-
-
 La liste des différentes fonctionnalités à penser et à se dispatcher :
 
 

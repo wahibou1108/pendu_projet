@@ -2,6 +2,10 @@
 
 /src
 /__pycache__
+<<<<<<< HEAD
+=======
+/_divers
+>>>>>>> 7daba0520c3d743ed505a3afb341266597bb9bc1
 tk_essais.py
 
 
@@ -10,6 +14,7 @@ module_jarfar.pyc
 module_samia.pyc
 module_sikou.pyc
 module_wahib.pyc
+
 
 
 
