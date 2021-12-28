@@ -37,8 +37,8 @@ def guessWord():
             word = (unidecode(random.choice(line).upper()))
     return word
 
+ #la fonction hideWord remplace chaque caractere d'un mot donné par des tirets et vise versa et retourne le mot on met le -1 car le dernier caractere est un espace
     
-        
 def hideWord(mot , listWord=[]):
     #caract='_ '*len(mot)
     caract=' '
@@ -49,7 +49,7 @@ def hideWord(mot , listWord=[]):
             caract += '_'    
 
     return caract[:-1]
-
+#fonction qui demande a l'utilisateur de saisir une lettre, verifie que c'est une lettre et non un autre caractere et la retourne en majuscule
 def saisieLettre():
     lettre=input("veuillez entrez une lettre svp : ")
     if len(lettre)>1 or ord(lettre)<65 or ord(lettre)>122:
@@ -57,7 +57,7 @@ def saisieLettre():
     else:
         return lettre.upper()
 
-  
+#fonction qui initialise un jeu  
 def init_jeu():
     global partie_en_cours, nb_erreurs, mot_a_deviner, show
     partie_en_cours = True 
@@ -66,7 +66,7 @@ def init_jeu():
     show = hideWord(mot_a_deviner)
 
 #global partie_en_cours, nb_erreurs
-init_jeu()
+init_jeu()#on initialise le jeu
 if partie_en_cours:
     print('Le mot à deviner est : ' , show)
     lettres_saisies=[]
