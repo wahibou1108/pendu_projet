@@ -3,7 +3,8 @@
 /src
 /__pycache__
 /_divers
-tk_essais.py
+tk_algo_essai.py
+tk_pendu_essai.py
 
 
 module_abder.pyc

@@ -1,7 +1,6 @@
 # fichier module_wahib.py
 
-import webbrowser
-#from math import *
+import webbrowser # POUR CREER UN EVENEMENT ENTRE LE BOUTON ET L'AFFICHAGE D'UNE PAGE WEB
 
 
 def wikiHelp():
@@ -17,46 +16,7 @@ def wikiHelp():
 
 if __name__ == "__main__":
 
-    '''
-    FAIRE MES TESTS ICI
-
-    replace
-    find
-    join
-    insert
-
-    '''
-
-    mot = "MARRON"
-
-    mot_masque = [ "_" for i in range(len(mot))]
-
-    mot_masque = " ".join(mot_masque)
-
-    print(mot_masque)
-
-
-    '''
-    for i in range(len(mot)):
-        print(" _ ")
-
-    lettre = input("Entrez une lettre :")
-
-    if i == mot[0]:
-        print("Bravo !")
-    else:
-        print("Faux")
-
-    '''
-
-    m = len(mot)
-    for i in mot:
-        m = mot.replace(i,"-")
-    print(mot)
-    print(m)
-
-
-    print("----------------")
+    pass
 
 
 
