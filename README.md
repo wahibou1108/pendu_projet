@@ -1,26 +1,32 @@
-# pendu_projet
-#****************************************************************
+#************************************
+Pendu réalisé en PYTHON             *
+avec la collaboration de :          *
+Samia Abderrahim Jarfar Sikou Wahib *
+#************************************
+
+Pour éviter les bugg :
+
+pip install pygame	# pour le son
+pip install unidecode	# pour oter les accents trémas oe etc
+
+POLICE IDENTIQUE DANS TOUT LE JEUX A INSTALLER SUR SON ORDI :
+------------------------------------------------------------
+https://www.dafont.com/fr/mystery-day.font?fpp=200&text=Bienvenue+dans+le+jeux+du+pendu+%21
+
+#****************************
 Le dossier /src est à coller à la racine de votre projet 
+Il contient les sons les image et les fichiers.csv
 
 Ce dossier /src sera accessible via le lien gDrive que j'afficherai ci-dessous :
 ---  lien à venir ---
 
 
-#****************************************************************
-Pour la partie sound installer pygame :
-pip install pygame
+#****************************
+La liste des différentes fonctionnalités 
+à penser et à se dispatcher :
+-----------------------------------------
 
-
-#****************************************************************
-Pendu réalisé en PYTHON avec la collaboration de :
-	- Samia 
-	- Abderrahim 
-	- Jarfar
-	- Sikou
-	- Wahib
-
-#****************************************************************
-La liste des différentes fonctionnalités à penser et à se dispatcher :
+-> Trouver la bibliothèque python contenant des catégories de mots rassemblées en Clé Valeur
 
 
 1- Redaction des fichiers contenant des listes de mots par catégorie
