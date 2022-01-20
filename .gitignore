@@ -1,12 +1,18 @@
-# Dossiers / fichiers ignorés WAHIB :
+# Dossiers et fichiers ignorés de WAHIB :
 
-/src
 /__pycache__
 /_divers
-tk_main_pendu_essai.py
-tk_algo_exos.py
+/src
 pendu_console.py
+tk_exos_perso.py
+tk_exos_perso_2.py
+main_pendu_ESSAI.pyw
 
+
+sauvegarde_main_pendu_ESSAI_sauvegarde_2022.01.10.py
+sauvegarde_main_proto_pendu_sauvegarde_2022.01.16.py
+sauvegarde_module_wahib.py
+sauvegarde_test_reset.py
 
 
 module_abder.pyc

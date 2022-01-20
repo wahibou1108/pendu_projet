@@ -10,6 +10,8 @@ import random                   # POUR CHOISIR UN MOT DANS UNE LISTE VIA CHOICE(
 
 
 
+
+
 # ------------ MENU DEROULANT ------------
 
 def wikiHelp(): # CETTE FONCTION SE TROUVE DANS LE
@@ -18,7 +20,13 @@ def wikiHelp(): # CETTE FONCTION SE TROUVE DANS LE
 
 def aide_showinfo(): # AFFICHE LES REGLES DU JEUX VIA UN POPUP WINDOWS
     ''' J'affiche un popup windows grace à showinfo via messagebox de tkinter '''
-    messagebox.showinfo("Règles du jeux", "Ce jeux consiste à trouver un mot avec un nombre de tentative limité, Ce jeux consiste à trouver un mot avec un nombre de tentative limité,Ce jeux consiste à trouver un mot avec un nombre de tentative limité")
+    messagebox.showinfo(title = "Aide", message = "Ce jeux consiste à trouver un mot avec un nombre de tentative limité.\n\
+- Level 1 par défaut te donne droit à 9 vies et deux indices.\n\
+- Level 2 ne te donne pas d'indices.\n\
+- Level 3 te donne quatre vies seulement")
+
+
+
 
 
 
@@ -27,6 +35,8 @@ def aide_showinfo(): # AFFICHE LES REGLES DU JEUX VIA UN POPUP WINDOWS
 
 def mute():
     pygame.mixer.music.stop()
+
+
 
 def son1():
     pygame.mixer.music.load("src/sound_hell.mp3")
@@ -55,194 +65,43 @@ def son5():
 
 
 
+def son6():
+    pygame.mixer.music.load('src/sound_gagne.mp3')
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(0)         # -1 en boucle   et   0 une fois
+
+def son7():
+    pygame.mixer.music.load('src/sound_perdu.mp3')
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(0)
+
+def son8():
+    pygame.mixer.music.load('src/sound_faudel.mp3')
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(0)
+
+def son9():
+    pygame.mixer.music.load('src/sound_clic.mp3')
+    pygame.mixer.music.set_volume(0.2)
+    pygame.mixer.music.play(0)
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-# ---- ALGORITHME PENDU VIA LE TERMINAL -------  ALGORITHME PENDU VIA LE TERMINAL -------
-# ---------------------------------------------------------------------------------------
 
 
 if __name__ == "__main__":
+    pass
 
 
-    fen = Tk()
-    fen.geometry("400x200")
-    fen.resizable(width=False, height=False)
 
 
 
 
-    # ------------ COMMENCEMENT --------------
 
-    # POUR AFFICHER BRAVO COMME CECI  _   _   _   _   _   _
-    def cacher(): # " ".join(bravo) fait la même chose
-        for i in bravo:
-            print(i, end=" ")
 
 
-
-    fruits          = ["marron","banane","pomme"]
-
-    mot_random      = random.choice( fruits )
-    print("\n\n DEBUG :",mot_random)
-
-    perime          = [] # CETTE LISTE VA SE REMPLIR DE BONNES ET DE MAUVAISES LETTRE POUR GRISER LES TOUCHES ENSUITE
-
-    bravo           = ["_"] * len( mot_random )
-
-
-
-    under_ = " ".join(bravo) # MEME RESULTAT QUE FONCTION CACHER()
-    print(f"Le mot '{under_}' contient '{len(mot_random)}' lettres \n")
-    #cacher()
-
-
-
-    c = 0 # compteur pour afficher les images du pendu à chaque echec
-
-    while True:
-
-        c = c + 1
-
-        devine = input("Entrez une lettre : ")
-
-        if devine in mot_random:
-
-            index = 0
-
-            for j in mot_random:
-
-                if j == devine:
-                    bravo[index] = devine                            # JE REMPLACE LES UNDERSCORES PAR LES LETTRES TROUVÉES
-
-
-                    if devine not in perime:
-                        perime.append(devine)                        # POUR STOCKER LA LETTRE DANS LA LISTE
-                    else:
-                        print(f"BONNE lettre {devine} déjà cliquée") # ICI GRISER LA TOUCHE CLAVIER
-
-
-                index += 1                                           # J'AJOUTE 1 A CHAQUE TOUR DE FOR POUR AVANCER EN MEME TEMPS QUE J DE FOR
-
-
-            # --- AFFICHER LE LABEL TKINTER ICI --> M _ R R _ N ---
-
-            cacher()
-
-
-
-
-        else:
-            if devine not in perime:
-                perime.append(devine)                               # POUR STOCKER LA LETTRE DANS LA LISTE
-
-
-                             # ICI GRISER LA TOUCHE CLAVIER
-
-                             # ICI IMAGE PENDU N1, PUIS N2, PUIS N3 etc
-
-
-            else:
-                print(f"MAUVAISE lettre {devine} déjà cliquée")
-
-            print("perime ->", perime)
-
-
-
-
-        # --- POUR ARRETER LE WHILE LORSQUE BRAVO N'A PLUS DE UNDERSCORE
-        # CAR BRAVO AU DEPART NE POSSEDE QUE DES UNDERSCORES ET SE REMPLI A CHAQUE TOUR DE FOR ---
-        #print("Débug :", bravo)
-
-        if '_' not in bravo:
-            print("BRAVO !")
-            break
-
-
-
-
-        print("Nombre de coups joué :",c)
-
-
-
-
-        # --- POUR ARRETER LE JEUX AU DELA DE 9 ECHECS ---
-        if c > 9:
-            print("PERDU !")
-            break
-
-
-    # ------------ FIN ALOGO PENDU --------------
-    # -------------------------------------------
-
-
-
-
-
-
-
-
-
-# ------- TEST ----- TEST ---- TEST ---- TEST ---- TEST ---- TEST --------
-
-
-    def recup_lettre():
-        labA.config( text = btn_lire['text'] )
-
-
-    ma_frame = Frame(fen)
-    ma_frame.pack()
-
-
-    # 1 - IMAGE -
-    canvImg = Canvas( ma_frame, width =100, height = 100, bg = "orange" )
-    canvImg.grid(row=0, column = 1)
-
-    img = PhotoImage(file="src/_divers/IcoPendu9.png")#.zoom(1)            # RECUPERATION ET AJOUT IMAGE
-
-    canvImg.create_image(50, 50, image = img)  # 50, 50 ici font référence au centre de l'image si je retire anchor
-    #canvImg.create_image(50, 50, image = img, anchor = NW ) # prends les deux valeur et part du coin NW de l'image
-
-
-
-    # AFFICHER LE LABEL BRAVO  _   _   _   _   _   _
-
-    def cach():
-        txt.set(" ".join(bravo))
-
-
-    txt = StringVar()
-    txt.set("underscore à venir")
-
-    labelBravo = Label( ma_frame, bg="red", textvariable = txt )
-    labelBravo.grid(row=1, column = 1)
-
-    btnJouer = Button( ma_frame, text="JOUER", command = cach)
-    btnJouer.grid(row=2, column = 1)
-
-
-
-
-
-
-
-
-    fen.mainloop()
-
-# ------------ FIN --------------
-
-    print("\nTout est OK !")
 
 
 
