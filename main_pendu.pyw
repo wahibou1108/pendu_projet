@@ -134,7 +134,7 @@ fen.protocol("WM_DELETE_WINDOW", pop_ask_cut_window_et_son) # WM pour Windows Ma
 def restart():
     pygame.quit()                         # CETTE LIGNE EMPECHE LE SON DE CONTINUER APRES LA FERMETURE DE LA FENETRE
     fen.destroy()                         # CETTE LIGNE ARRETE L'APPLICATION
-    os.startfile("main_pendu_ESSAI.pyw")            # CETTE LIGNE RELANCE L'APPLICATION.
+    os.startfile("main_pendu.pyw")            # CETTE LIGNE RELANCE L'APPLICATION.
 
 
 
