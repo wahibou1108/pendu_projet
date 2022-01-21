@@ -18,20 +18,24 @@ pip install unidecode	   # pour oter les accents trémas oe etc
 
 Installer cette police : 
 -----------------------
+
 https://www.dafont.com/fr/mystery-day.font?fpp=200&text=Bienvenue+dans+le+jeux+du+pendu+%21
 
 
 
 #****************************
+
 Le dossier /src est à coller à la racine du projet 
 Il contient les sons, la police, les images, les fichiers.csv contenant les mots
 
 Ce dossier /src SERA accessible via le lien gDrive que j'afficherai ci-dessous :
+
 ---  lien à venir --- lien à venir --- 
 
 
 
 #********** A FAIRE *********
+
 La liste des différentes fonctionnalités à penser et à se dispatcher :
 ---------------------------------------------------------------------
 
@@ -69,6 +73,7 @@ PARTIE TECHNIQUE
 
 
 PETITE PRECISION CE PROGRAMME N'UTILISE PAS :
+
 - les event avec bind()
 - PIL de la bibliotheque pillow
 - textvariable avec StringVar()
