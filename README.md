@@ -1,19 +1,19 @@
 #***********************************************
 #  Jeu du Pendu réalisé en PYTHON via Tkinter  *
+#            sous environement Window          *
 #           avec la collaboration de :         *
 #      Samia Abderrahim Jarfar Sikou Wahib     *
 #***********************************************
 
 
-
 # LE FICHIER PRINCIPAL EST : main_pendu.pyw
-
 
 
 # Pour éviter les bugg suivre les quelques consignes ci-dessous :
 #---------------------------------------------------------------
 
 pip install pygame	   # pour le son
+
 pip install unidecode	   # pour oter les accents trémas oe etc
 
 Installer cette police : 
@@ -28,7 +28,6 @@ Il contient les sons, la police, les images, les fichiers.csv contenant les mots
 
 Ce dossier /src SERA accessible via le lien gDrive que j'afficherai ci-dessous :
 ---  lien à venir --- lien à venir --- 
-
 
 
 
