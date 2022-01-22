@@ -25,12 +25,10 @@ https://www.dafont.com/fr/mystery-day.font?fpp=200&text=Bienvenue+dans+le+jeux+d
 
 #****************************
 
-Le dossier /src est à coller à la racine du projet 
-Il contient les sons, la police, les images, les fichiers.csv contenant les mots
+Le dossier /src à l'adresse ci-dessous est à coller à la racine du projet 
+Il contient les sons, la police, les images, les fichiers.csv contenant les mots.
 
-Ce dossier /src SERA accessible via le lien gDrive que j'afficherai ci-dessous :
-
----  lien à venir --- lien à venir --- 
+https://drive.google.com/drive/folders/1A0FYuGtiQVXzD3JTjg74jbxM-Ng9UhXw?usp=sharing
 
 
 
