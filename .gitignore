@@ -1,10 +1,11 @@
 # ------- Dossiers et fichiers ignorés -------
 
-# module_samia.pyc
-module_samia.pyc
 
-module_abder.py
+# module_abder.py
 module_abder.pyc
+
+# module_samia.py
+module_samia.pyc
 
 module_jarfar.py
 module_jarfar.pyc
@@ -12,7 +13,7 @@ module_jarfar.pyc
 module_sikou.py
 module_sikou.pyc
 
-module_wahib.py
+# module_wahib.py
 module_wahib.pyc
 
 /__pycache__
@@ -24,7 +25,7 @@ module_wahib.pyc
 
 
 main_pendu_ESSAI.pyw
-pendu_console.py
+pendu_console_wb.py
 sauvegarde_main_pendu_ESSAI_sauvegarde_2022.01.10.py
 sauvegarde_main_proto_pendu_sauvegarde_2022.01.16.py
 sauvegarde_module_wahib.py
