@@ -14,9 +14,13 @@ from unidecode import unidecode
 #la fonction parcourt le fichier approprié et retourne un mot au hasard de la liste grace a la fonction random et sa methode choice
 
 def guessWord():
+    
     categorie =input("choisissez une categorie : animaux, sports, villes, fruits et legumes : ")
+
     if categorie == "animaux" :
-        filename='animals.csv'
+        
+        filename='csv/liste_animaux.csv'
+        
         with open(filename, 'r', encoding='utf-8') as f:  
             line = f.readlines()
             word = (unidecode(random.choice(line).upper()))
@@ -25,16 +29,25 @@ def guessWord():
         #print(unidecode(random.choice(line).upper()))
 
     elif categorie == "sports" :
-        filename ="sports.csv"
+        
+        filename ="csv/liste_sports.csv"
+        
         print(filename)
+        
     elif categorie == "fruits et legumes"  :
-        filename ='fruitslegumes.csv'
+        
+        filename ='csv/liste_fruitslegumes.csv'
+        
         print(filename)
-    elif categorie == "villes"  :
-        filename ='villes.csv'
+        
+    elif categorie == "villes" :
+        
+        filename ='csv/liste_villes.csv'
+        
         with open(filename, 'r', encoding='utf-8') as f:  
             line = f.readlines()
             word = (unidecode(random.choice(line).upper()))
+            
     return word
 
  #la fonction hideWord remplace chaque caractere d'un mot donné par des tirets et vise versa et retourne le mot on met le -1 car le dernier caractere est un espace
