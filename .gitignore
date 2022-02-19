@@ -1,25 +1,32 @@
-# Dossiers et fichiers ignorés de WAHIB :
+# ------- Dossiers et fichiers ignorés -------
+
+# module_samia.pyc
+module_abder.pyc
+module_jarfar.pyc
+module_sikou.pyc
+module_wahib.pyc
+
 
 /__pycache__
 /_divers
-/src
-pendu_console.py
-tk_exos_perso.py
-tk_exos_perso_2.py
+
+
+/src/_divers/
+/src/csv/
+/src/music/
+
+
 main_pendu_ESSAI.pyw
-
-
+pendu_console.py
 sauvegarde_main_pendu_ESSAI_sauvegarde_2022.01.10.py
 sauvegarde_main_proto_pendu_sauvegarde_2022.01.16.py
 sauvegarde_module_wahib.py
 sauvegarde_test_reset.py
+tk_exos_perso.py
+tk_exos_perso_2.py
 
 
-module_abder.pyc
-module_jarfar.pyc
-module_samia.pyc
-module_sikou.pyc
-module_wahib.pyc
+
 
 
 

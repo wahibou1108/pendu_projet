@@ -229,7 +229,7 @@ label_indice_liste.grid( row = 1, column = 0 )
 # ------------------ IMAGE DE FOND PERMANANTE ------------------
 
 canvImg = Canvas( framePendu, width=100, height = 100)
-img = PhotoImage(file=f"src/_divers/pendu_picto{0}.png")
+img = PhotoImage(file=f"src/pendu_picto{0}.png")
 canvImg.create_image(0, 0, anchor=NW, image = img)  # 50, 50 ici font référence au centre de l'image si je retire anchor
 canvImg.grid( row = 2, column = 0 )
 
@@ -242,7 +242,7 @@ def img_label( jusqua9 ):           # LE PARAMETRE ATTEND LE FUTURE COMPTEUR DE 
 
     lab_img = Label(framePendu)
     lab_img.grid( row = 2, column = 0 )
-    mon_image = PhotoImage( file = f"src/_divers/pendu_picto{jusqua9}.png" )
+    mon_image = PhotoImage( file = f"src/pendu_picto{jusqua9}.png" )
     lab_img.config(image = mon_image)
     lab_img.image = mon_image
 
@@ -787,7 +787,7 @@ for i in range(len(a__z)):
 
 
 
-# LABEL RESTE A FAIRE
+# MESSAGE RESTE A FAIRE
 
 resteAfaire = Message(framePendu,
                     width = 200,
