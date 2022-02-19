@@ -17,16 +17,7 @@ python3 main_pendu.pyw		---> POUR EXECUTER LE FICHIER EN LIGNE DE COMMANDE SOUS 
 #---------------------------------------------------------------
 pip install pygame	   ------> pour le son
 
-pip install unidecode	   ------> pour oter les accents trémas oe etc
-
-
-
-Le dossier /src (lien ci-dessous) est à coller à la racine du projet :
----------------------------------------------------------------------
-Il contient les sons, la police, les images, les fichiers.csv contenant les mots.
-https://drive.google.com/drive/folders/1A0FYuGtiQVXzD3JTjg74jbxM-Ng9UhXw?usp=sharing
-
-
+pip install unidecode	   ------> pour oter les accents trémas oe de boeuf etc
 
 
 

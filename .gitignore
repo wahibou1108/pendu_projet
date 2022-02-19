@@ -1,11 +1,19 @@
 # ------- Dossiers et fichiers ignorés -------
 
 # module_samia.pyc
-module_abder.pyc
-module_jarfar.pyc
-module_sikou.pyc
-module_wahib.pyc
+module_samia.pyc
 
+module_abder.py
+module_abder.pyc
+
+module_jarfar.py
+module_jarfar.pyc
+
+module_sikou.py
+module_sikou.pyc
+
+module_wahib.py
+module_wahib.pyc
 
 /__pycache__
 /_divers
