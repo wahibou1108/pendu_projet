@@ -102,44 +102,27 @@ https://youtu.be/V-VJLcvqfTA	  --> Pour arreter le son à la fermeture de la win
 
 
 
-#********** A FAIRE *********
+#********** RESTE A AMELIORER *********
 
-La liste des différentes fonctionnalités à penser et à se dispatcher :
----------------------------------------------------------------------
--> Trouver la bibliothèque python contenant des catégories de mots rassemblées en Clé Valeur
+1 OK -         Faire défiler les images à chaque coups perdus
 
-1- Redaction des fichiers contenant des listes de mots par catégorie
+2 OK PRESQUE - Le bouton 'jouer' doit pouvoir stoper une partie en cours avec un message d'alerte, puis relancer la partie
 
-   - Rédaction de fichiers par niveau de difficulté
-   
-2- Décider de gérer le niveau difficulté dans la façon dont on va extraire le mot et l’afficher, 
-   dans l’affichage du mot( faire apparaître quelques lettres suivant le niveau de difficulté etc.. )
-   
-3- Choix de l’interface(tkinter, pygame etc..)
+3 OK PRESQUE - Afficher un label 'BRAVO !' si je gagne + music bravo (voir /src)
 
-PARTIE TECHNIQUE
+4 OK PRESQUE - Afficher un label 'PERDU !' si je perds + music perdu (voir /src)
 
-1- fonctionnalité de gestion de fichier et extraction d’un mot au hasard parmi une liste de mots
+5 -            RELIER LE PENDU A UN FICHIER .CSV contenant plusieur categories liste mot
 
-2- L’afficher en tant que tuple( car c’est le seul typage indexable mais  non modifiable)
+6 OK -         TESTER LE TOUT AVEC TOUT L'ALPHABET
 
-3- Affichage du mot extrait sous forme de tiret
+7 -            CREER 3 NIVEAU DE DIFFICULTE
 
-4- Gestion et affichage du clavier virtuel ( accorder l’affichage à l’événement clavier(pour chaque lettre))
+8 -            AFFICHER LE MOT DANS LE LABEL SI JE PERDS
 
-5- Fonctionnalité qui teste si une lettre est présente dans le mot extrait, 
+9 OK -         ENFIN EN DERNIER INTEGRER LE VRAI GRAPHISME
 
-	- nous l’affichons à sa place en remplaçant le tiret en question sinon nous grisons la touche "événement" 
-	
-	- et/ou nous l’affichons en dessous du mot ou à part dans un cadre lettres incompatibles(à voir)
-	
-6- Fonctionnalité qui a chaque lettre incompatible affiche étape par étape le dessin du pendu
 
-7- Fonctionnalité qui affiche le mot fini puis le status "gagné"
-
-8- Une autre qui affiche le status perdu avec le dessin complet du pendu
-
-9- Affichage des tentatives restantes
 
 
 

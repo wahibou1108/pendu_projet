@@ -789,19 +789,20 @@ for i in range(len(a__z)):
 
 # MESSAGE RESTE A FAIRE
 
-resteAfaire = Message(framePendu,
+resteAfaire = Message(framePendu, font=('', 8, 'bold',),
                     width = 200,
                     relief=RAISED,
-                    justify = 'center',
+                    #justify = 'center',
                     text="TRAVAIL DE GROUPE - PROCHAINS DEFIS DANS CET ORDRE :\n\n\
-OK 1- Faire défiler les images à chaque coups perdus \n\n\
-OK PRESQUE 2- Le bouton 'jouer' doit pouvoir stoper une partie en cours avec un message d'alerte, puis relancer la partie\n\n\
-OK PRESQUE 3- Afficher un label 'BRAVO !' si je gagne + music bravo (voir /src)\n\n\
-OK PRESQUE 4- Afficher un label 'PERDU !' si je perds + music perdu (voir /src)\n\n\
-5- RELIER LE PENDU A UN FICHIER .CSV contenant plusieur categories liste mot\n\n\
-OK 6- TESTER LE TOUT AVEC TOUT L'ALPHABET\n\n\
-7- CREER 3 NIVEAU DE DIFFICULTE\n\n\
-8- ENFIN EN DERNIER INTEGRER LE VRAI GRAPHISME\n\n\
+1 OK - Faire défiler les images à chaque coups perdus \n\n\
+2 OK PRESQUE - Le bouton 'jouer' doit pouvoir stoper une partie en cours avec un message d'alerte, puis relancer la partie\n\n\
+3 OK PRESQUE - Afficher un label 'BRAVO !' si je gagne + music bravo (voir /src)\n\n\
+4 OK PRESQUE - Afficher un label 'PERDU !' si je perds + music perdu (voir /src)\n\n\
+5 - RELIER LE PENDU A UN FICHIER .CSV contenant plusieur categories liste mot\n\n\
+6 OK - TESTER LE TOUT AVEC TOUT L'ALPHABET\n\n\
+7 - CREER 3 NIVEAU DE DIFFICULTE\n\n\
+8 - AFFICHER LE MOT DANS LE LABEL SI JE PERDS\n\n\
+9 OK - ENFIN EN DERNIER INTEGRER LE VRAI GRAPHISME\n\n\
 __FIN__")
 
 resteAfaire.grid( row = 6, column = 0 )
